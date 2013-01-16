@@ -1,0 +1,19 @@
+div#container{
+	width: 450px;
+	table-layout: fixed;
+	word-wrap:break-word;
+	word-break:break-all;
+}
+.talbe{
+	text-align: center;
+	
+}
+.emailC{
+	width: 200px;
+}
+.sattusC{
+	width: 100px;
+}
+.operationC{
+	width: 150px;
+}

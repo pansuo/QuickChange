@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "人人快切(Quick Change)",
+  "description": "快速切换人人账号，QA专用",
+  "version": "1.1",
+  "icons": {
+    "16": "images/16.png",
+    "19": "images/19.png",
+    "32": "images/32.png",
+    "48": "images/48.png"
+  },
+  "browser_action": {
+    "default_icon": "images/48.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "page":"global.html"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts":[
+    {
+      "matches": [
+        "*://www.renren.com/SysHome.do*"
+      ],
+      "js": [
+        "js/injected.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
